@@ -1,4 +1,5 @@
 const { readFile, writeFile } = require("fs");
+//const { readFile, writeFile } = require("fs").promises; // then we can use it diretly fo rasync await
 const util = require("util");
 const readFilePromise = util.promisify(readFile);
 const writeFilePromise = util.promisify(writeFile);
