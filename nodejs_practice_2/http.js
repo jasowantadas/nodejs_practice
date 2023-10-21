@@ -9,3 +9,4 @@ const server = http.createServer((req, res) => {
   res.end(`<h1>We cant seem to find the page you are looking for</h1>`);
 });
 server.listen(4000);
+//http is syncronous by default
