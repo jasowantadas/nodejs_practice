@@ -1,15 +1,14 @@
 const express = require("express");
-const path = require("path");
+
 const app = express();
 const PORT = 5000;
 
-//middle ware
-app.use(express.static("./"));
-
 app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./index.html"));
+  res.send("Home Page");
 });
-
+app.get("/about", (req, res) => {
+  res.send("About");
+});
 app.all("*", (req, res) => {
   res.status(404).send("<h1>Resource not found</h1>");
 });
