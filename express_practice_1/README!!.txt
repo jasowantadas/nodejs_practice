@@ -1,0 +1,1 @@
+The reason we use express in place of http is if suppose there are a lot of resources like css and much more pages we will have to load them all inividually,Express makes it easier
